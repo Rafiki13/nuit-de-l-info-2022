@@ -9,9 +9,6 @@
     <title><?php echo $pagetitle; ?></title>
 </head>
 <body>
-<header>
-
-</header>
 <main>
     <?php
 
