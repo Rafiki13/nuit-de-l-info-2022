@@ -1,0 +1,95 @@
+$arrondi: 7px;
+
+#bestiaire {
+  .cardContainer {
+    display: grid;
+
+    @media screen and (max-width: 600px){
+      grid-template-columns: 1fr;
+    }
+    @media screen and (min-width: 600px) and (max-width: 900px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 900px) and (max-width: 1200px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1200px){
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .card {
+    margin: 10px 20px;
+    aspect-ratio: .7;
+    position: relative;
+    border-radius: $arrondi;
+    min-width: 250px;
+    width: calc(100% - 40px); //TODO supprimer
+    max-width: 350px;
+
+    background-color: $couleurFondCarte;
+    h2, p{
+      color: #5C2496;
+    }
+
+    .front {
+      img{
+        border-top-left-radius: $arrondi;
+        border-top-right-radius: $arrondi;
+        border-bottom: solid $couleurTexteCarte 4px;
+        width:100%;
+      }
+
+      .cardHead{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        .dangerosite{
+          display:flex;
+
+          > div{
+            margin: 2.5px;
+            width:15px;
+            height:15px;
+            border-radius: 10px;
+            background-color: $couleurTexteCarte;
+
+            &.active{
+              background-color: $couleurAccentuationCarte;
+            }
+          }
+        }
+      }
+
+      .type{
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        position:absolute;
+        bottom: 10px;
+        lefet: 0;
+        text-align: right;
+      }
+    }
+
+    .back {
+      display: none;
+      padding: 10px;
+
+      p{
+        padding-left: 20px;
+      }
+    }
+
+    &:hover{
+      .front{
+        display:none;
+      }
+
+      .back{
+        display:block;
+      }
+    }
+  }
+}
