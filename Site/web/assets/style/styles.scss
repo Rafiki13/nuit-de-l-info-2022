@@ -1,37 +1,8 @@
-html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite  {
-  margin: 0;
-}
+@import "base/polices";
+@import "base/variables";
 
-body {
-  background-color: #171717;
-}
+@import "layout/baseLayout";
 
-h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
-  color: white;
-}
+@import "pages/accueil";
+@import "pages/bestiaire";
 
-#bestiaire {
-  .cardContainer {
-    // gestion du responsive
-  }
-
-  .card {
-    aspect-ratio: .7;
-    width:250px; //TODO supprimer
-
-    background-color: beige;
-    h2, p{
-      color: black;
-    }
-
-    .front {
-      img{
-        width:100%;
-      }
-    }
-
-    .back {
-      display: none;
-    }
-  }
-}

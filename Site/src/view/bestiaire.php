@@ -9,13 +9,13 @@
                     <div class="cardHead">
                         <h2>Son p'tit nom</h2>
                         <div class="dangerosite">
-                            <div></div>
-                            <div></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
                             <div></div>
                         </div>
                     </div>
 
-                    <p class="type"></p>
+                    <p class="type">virus</p>
                 </div>
 
                 <div class="back">

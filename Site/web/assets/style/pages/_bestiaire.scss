@@ -1,0 +1,61 @@
+#bestiaire {
+  .cardContainer {
+    // gestion du responsive
+  }
+
+  .card {
+    aspect-ratio: .7;
+    position: relative;
+    border-radius: 7px;
+    width:250px; //TODO supprimer
+
+    background-color: beige;
+    h2, p{
+      color: #5C2496;
+    }
+
+    .front {
+      img{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        width:100%;
+      }
+
+      .cardHead{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        .dangerosite{
+          display:flex;
+
+          > div{
+            margin: 2.5px;
+            width:15px;
+            height:15px;
+            border-radius: 10px;
+            background-color: #5C2496;
+
+            &.active{
+              background-color: deeppink;
+            }
+          }
+        }
+      }
+
+      .type{
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        position:absolute;
+        bottom: 10px;
+        lefet: 0;
+        text-align: right;
+      }
+    }
+
+    .back {
+      display: none;
+    }
+  }
+}
