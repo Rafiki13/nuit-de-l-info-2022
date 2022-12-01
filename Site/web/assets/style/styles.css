@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 #bestiaire .card {
   aspect-ratio: 0.7;
   position: relative;
@@ -25,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
 #bestiaire .card .front img {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  border-bottom: solid #5C2496 4px;
   width: 100%;
 }
 #bestiaire .card .front .cardHead {

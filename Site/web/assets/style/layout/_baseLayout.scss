@@ -4,9 +4,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite  {
 }
 
 body {
-  background-color: #171717;
+  background-color: $couleurFond;
 }
 
 h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
-  color: white;
+  color: $couleurTexte;
+}
+
+a{
+  text-decoration: none;
 }
