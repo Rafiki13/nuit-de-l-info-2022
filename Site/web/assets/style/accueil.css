@@ -11,6 +11,20 @@ div{
     margin: 30px 0px 30px 0px;
 }
 
-#intro{
+.arttexte{
+    padding:20px;
     background-color:blueviolet;
 }
+
+.img img{
+    width:550px;
+
+}
+.img{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:90%;
+
+}
+
