@@ -1,3 +1,5 @@
+$arrondi: 7px;
+
 #bestiaire {
   .cardContainer {
     // gestion du responsive
@@ -6,18 +8,19 @@
   .card {
     aspect-ratio: .7;
     position: relative;
-    border-radius: 7px;
+    border-radius: $arrondi;
     width:250px; //TODO supprimer
 
-    background-color: beige;
+    background-color: $couleurFondCarte;
     h2, p{
       color: #5C2496;
     }
 
     .front {
       img{
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
+        border-top-left-radius: $arrondi;
+        border-top-right-radius: $arrondi;
+        border-bottom: solid $couleurTexteCarte 4px;
         width:100%;
       }
 
@@ -35,10 +38,10 @@
             width:15px;
             height:15px;
             border-radius: 10px;
-            background-color: #5C2496;
+            background-color: $couleurTexteCarte;
 
             &.active{
-              background-color: deeppink;
+              background-color: $couleurAccentuationCarte;
             }
           }
         }
