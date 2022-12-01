@@ -16,11 +16,37 @@ a {
   text-decoration: none;
 }
 
+#bestiaire .cardContainer {
+  display: grid;
+}
+@media screen and (max-width: 600px) {
+  #bestiaire .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #bestiaire .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #bestiaire .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bestiaire .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 #bestiaire .card {
+  margin: 10px 20px;
   aspect-ratio: 0.7;
   position: relative;
   border-radius: 7px;
-  width: 250px;
+  min-width: 250px;
+  width: calc(100% - 40px);
+  max-width: 350px;
   background-color: beige;
 }
 #bestiaire .card h2, #bestiaire .card p {
