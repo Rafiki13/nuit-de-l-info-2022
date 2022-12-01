@@ -1,4 +1,4 @@
-/*Principales*/
+
 main{
     margin:auto;
     width:90%;
@@ -16,8 +16,12 @@ main{
     background-color:blueviolet;
 }
 
-.img img{
-    width:550px;
+.arttexte ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.img div{
     margin-bottom:10px;
 
 }
@@ -28,8 +32,25 @@ main{
     width:90%;
 }
 
+.img div{
+    background: url("../img/jeuexemple.jpg");
+    width:50%;
+    height: 140px;
+    background-size: 100% 100%;
 
-.arttexte ul li a{
-    text-decoration:none;
-    color:white;
+}
+
+.img div:not(:hover) p{
+    display:none;
+}
+
+.img div:hover p{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    font-size:x-large;
 }

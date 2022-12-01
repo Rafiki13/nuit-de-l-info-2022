@@ -6,12 +6,12 @@
     </div>
 
     <div class="img">
-        <img src="assets/img/jeuexemple.jpg" alt="jeuexemple">
+        <div><p>Commencez</p></div>
         <p>Lore du jeu</p>
     </div>
 
     <div class="img">
-        <img src="assets/img/jeuexemple.jpg" alt="jeuexemple">
+        <div><p>Commencez</p></div>
         <p>Bestiaire et explications</p>
     </div>
 
