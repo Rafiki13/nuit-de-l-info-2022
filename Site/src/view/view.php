@@ -18,4 +18,7 @@
     ?>
 </main>
 </body>
+<footer>
+    <a href="src/view/accueil.php"><p>Retour à l'accueil</p></a>
+</footer>
 </html>
