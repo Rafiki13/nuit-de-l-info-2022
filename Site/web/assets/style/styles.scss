@@ -1,0 +1,37 @@
+html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite  {
+  margin: 0;
+}
+
+body {
+  background-color: #171717;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
+  color: white;
+}
+
+#bestiaire {
+  .cardContainer {
+    // gestion du responsive
+  }
+
+  .card {
+    aspect-ratio: .7;
+    width:250px; //TODO supprimer
+
+    background-color: beige;
+    h2, p{
+      color: black;
+    }
+
+    .front {
+      img{
+        width:100%;
+      }
+    }
+
+    .back {
+      display: none;
+    }
+  }
+}

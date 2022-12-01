@@ -1,11 +1,28 @@
-html, body{
-    margin: 0;
+html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
+  margin: 0;
 }
 
-body{
-    background-color: #171717;
+body {
+  background-color: #171717;
 }
 
-h1, h2, h3, h4, h5, h6, p, label, input{
-    color:white;
+h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
+  color: white;
 }
+
+#bestiaire .card {
+  aspect-ratio: 0.7;
+  width: 250px;
+  background-color: beige;
+}
+#bestiaire .card h2, #bestiaire .card p {
+  color: black;
+}
+#bestiaire .card .front img {
+  width: 100%;
+}
+#bestiaire .card .back {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
