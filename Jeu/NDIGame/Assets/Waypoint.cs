@@ -3,22 +3,35 @@ using UnityEngine;
 namespace NDIGame
 {
 
+    [System.Serializable]
     public class Waypoint
     {
 
-        private int[] paths;
+        [SerializeField] private int[] next;
+        [SerializeField] private Vector2 position;
 
-        private Vector2 position;
+        public Vector2 Position => position;
 
-        public Waypoint(Vector2 position, int[] paths)
+        public int this[uint index]
         {
-            this.position = position;
-            this.paths = paths;
+            get => next[UnityEngine.Random.Range(0, next.Length)];
         }
 
-        public int[] Paths => paths;
+    }
 
-        private Vector2 Position => position;
+    [System.Serializable]
+    public class Path
+    {
+
+        [SerializeField] private Waypoint[] path;
+        [SerializeField] private int startingPoint;
+
+        public int StartingPoint => startingPoint;
+
+        public Waypoint this[uint index]
+        {
+            get => path[index];
+        }
 
     }
 
