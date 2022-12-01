@@ -59,6 +59,21 @@ $arrondi: 7px;
 
     .back {
       display: none;
+      padding: 10px;
+
+      p{
+        padding-left: 20px;
+      }
+    }
+
+    &:hover{
+      .front{
+        display:none;
+      }
+
+      .back{
+        display:block;
+      }
     }
   }
 }

@@ -61,6 +61,16 @@ a {
 }
 #bestiaire .card .back {
   display: none;
+  padding: 10px;
+}
+#bestiaire .card .back p {
+  padding-left: 20px;
+}
+#bestiaire .card:hover .front {
+  display: none;
+}
+#bestiaire .card:hover .back {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
