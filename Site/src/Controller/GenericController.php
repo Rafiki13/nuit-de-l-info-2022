@@ -2,8 +2,7 @@
 
 namespace App\Ndi\Controller;
 
-use App\Covoiturage\Lib\MessagesFlash;
-use App\Covoiturage\Lib\PreferenceControleur;
+use App\Ndi\Lib\MessagesFlash;
 
 class GenericController{
     protected static function afficheVue(string $cheminVue, array $parametres = []): void
@@ -16,5 +15,17 @@ class GenericController{
     public static function redirect(string $url){
         header("Location: $url");
         exit();
+    }
+
+    public static function accueil(){
+        self::afficheVue("view.php", [
+            "pagetitle" => "Accueil",
+            "pageName" => "accueil.php"]);
+    }
+
+    public static function bestiaire(){
+        self::afficheVue("view.php", [
+            "pagetitle" => "Bestiaire",
+            "pageName" => "bestiaire.php"]);
     }
 }
