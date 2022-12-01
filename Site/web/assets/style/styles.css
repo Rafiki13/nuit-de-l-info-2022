@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
   margin: 0;
+  font-family: Nunito;
 }
 
 body {
@@ -12,14 +14,45 @@ h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
 
 #bestiaire .card {
   aspect-ratio: 0.7;
+  position: relative;
+  border-radius: 7px;
   width: 250px;
   background-color: beige;
 }
 #bestiaire .card h2, #bestiaire .card p {
-  color: black;
+  color: #5C2496;
 }
 #bestiaire .card .front img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   width: 100%;
+}
+#bestiaire .card .front .cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+#bestiaire .card .front .cardHead .dangerosite {
+  display: flex;
+}
+#bestiaire .card .front .cardHead .dangerosite > div {
+  margin: 2.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #5C2496;
+}
+#bestiaire .card .front .cardHead .dangerosite > div.active {
+  background-color: deeppink;
+}
+#bestiaire .card .front .type {
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  position: absolute;
+  bottom: 10px;
+  lefet: 0;
+  text-align: right;
 }
 #bestiaire .card .back {
   display: none;
