@@ -51,7 +51,7 @@ class Ist{
 
         $liste[] = new Ist(
             "VIH",
-            "BOSS FINAL VIH HD.png",
+            "BOSS_FINAL_VIH_HD.png",
             "VIH",
             Niveaudanger::Eleve,
             TypeIst::Virus,
@@ -60,7 +60,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Chlamydiae",
-            "Chlamydiae HD.png",
+            "Chlamydiae_HD.png",
             "Chlamydiae",
             Niveaudanger::Moyen,
             TypeIst::Bacterie,
@@ -69,7 +69,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Gonococcie",
-            "Gonococcie HD.png",
+            "Gonococcie_HD.png",
             "Gonococcie",
             Niveaudanger::Faible,
             TypeIst::Bacterie,
@@ -78,7 +78,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Hepatite B",
-            "Hepatite B HD.png",
+            "Hepatite_B_HD.png",
             "Hepatite B",
             Niveaudanger::Eleve,
             TypeIst::Virus,
@@ -87,7 +87,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Herpes",
-            "Herpes HD.png",
+            "Herpes_HD.png",
             "Herpes",
             Niveaudanger::Faible,
             TypeIst::Virus,
@@ -96,7 +96,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Mycose",
-            "Mycose HD.png",
+            "Mycose_HD.png",
             "Mycose",
             Niveaudanger::Faible,
             TypeIst::Champis,
@@ -105,7 +105,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Papillomavirus",
-            "Papillomavirus HD.png",
+            "Papillomavirus_HD.png",
             "Papillomavirus",
             Niveaudanger::Eleve,
             TypeIst::Virus,
@@ -114,7 +114,7 @@ class Ist{
         );
         $liste[] = new Ist(
             "Syphillis",
-            "Syphillis HD.png",
+            "Syphillis_HD.png",
             "Syphillis",
             Niveaudanger::Eleve,
             TypeIst::Bacterie,

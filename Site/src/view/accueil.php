@@ -20,7 +20,7 @@
     <div>
     <h1>Bienvenue sur MSTower !</h1>
         <label for="openPreservatifs">
-            <img src="assets/img/logoSida.png" alt="logosidaction">
+            <img src="assets/img/LogoSida.png" alt="logosidaction">
         </label>
     </div>
     <p>Le but de ce site est de vous sensibiliser sur le sida tout en vous divertissant. Bonne navigation!</p>
