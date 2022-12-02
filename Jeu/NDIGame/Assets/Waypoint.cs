@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace NDIGame
 {
@@ -7,14 +8,18 @@ namespace NDIGame
     public class Waypoint
     {
 
-        [SerializeField] private int[] next;
+        [SerializeField] private List<Waypoint> next = new List<Waypoint>();
         [SerializeField] private Vector2 position;
 
         public Vector2 Position => position;
-
-        public int this[uint index]
+        
+        public Waypoint RandomNext
         {
-            get => next[UnityEngine.Random.Range(0, next.Length)];
+            get
+            {
+                return next.Count == 0 ? null : next[Random.Range(0, next.Count)];
+            }
+
         }
 
     }
@@ -24,11 +29,11 @@ namespace NDIGame
     {
 
         [SerializeField] private Waypoint[] path;
-        [SerializeField] private int startingPoint;
+        [SerializeField] private Waypoint start;
 
-        public int StartingPoint => startingPoint;
+        public Waypoint Start => start;
 
-        public Waypoint this[uint index]
+        public Waypoint this[int index]
         {
             get => path[index];
         }
