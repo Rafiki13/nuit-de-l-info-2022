@@ -5,10 +5,11 @@ namespace NDIGame
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private int life = 10;
-        [SerializeField] private int speed = 3;
-        [SerializeField] private int defense = 2;
-        [SerializeField] private int magicDefense = 2;
+        [SerializeField] private float speed = 3f;
+        [SerializeField] private float defense = 2;
+        [SerializeField] private float magicDefense = 2;
         [SerializeField] private int damage = 2;
+        [SerializeField] private int money = 0;
 
         private float epsilon = 0.1f;
 
@@ -17,8 +18,6 @@ namespace NDIGame
 
         private float distanceBetweenWaypoints;
         private float distanceRestante;
-
-        private int hp;
 
         void Start()
         {
@@ -55,14 +54,18 @@ namespace NDIGame
 
         public void Damage(int damages)
         {
-            hp -= damages;
-            Debug.Log("Enemy being damaged");
-            if(hp <= 0)
+            life -= damages;
+            if(life <= 0)
             {
+                GameManager.Instance.AddMoney(money);
                 Destroy(gameObject);
-                Debug.Log("Enemy destroyed");
             }
 
+        }
+
+        private void OnDestroy()
+        {
+            GameManager.Instance.RemoveEnemy(this);
         }
 
     }

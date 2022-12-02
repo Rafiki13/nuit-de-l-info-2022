@@ -18,7 +18,7 @@ namespace NDIGame
             {
                 return next.Count == 0 ? null : next[Random.Range(0, next.Count)];
             }
-
+            
         }
 
         public void OnDrawGizmos()

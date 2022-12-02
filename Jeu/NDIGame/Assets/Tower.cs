@@ -6,18 +6,36 @@ namespace NDIGame
     public class Tower : MonoBehaviour
     {
 
-        [SerializeField] private float attackSpeed;
+        [SerializeField] private GameObject projectilePrefab;
+        [SerializeField] private float attackDelay = 0.2f;
         [SerializeField] private float range = 5f;
-        [SerializeField] private int damages;
+        [SerializeField] private int damage;
+
+        [SerializeField] private int price;
 
         private Enemy focus;
 
         private float timer;
 
+        public int Price => price;
+
         private void Update()
         {
-            if(!focus)
+
+            if(focus)
             {
+                if(timer >= attackDelay)
+                {
+                    GameObject projObj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                    Projectile proj = projObj.GetComponent<Projectile>();
+                    proj.Damage = damage;
+                    proj.Target = focus;
+                    timer -= attackDelay;
+                    return;
+                }
+                timer += Time.deltaTime;
+
+            } else {
                 foreach(Enemy enemy in GameManager.Instance.Enemies)
                 {
                     if(Vector2.Distance(transform.position, enemy.transform.position) <= range)
@@ -27,16 +45,9 @@ namespace NDIGame
                     }
 
                 }
-
             }
 
-            if(focus && timer >= attackSpeed)
-            {
-                focus.Damage(damages);
-                timer -= attackSpeed;
-                return;
-            }
-            timer += Time.deltaTime;
+            
         }
 
         public void FocusEnemy(Enemy enemy)
@@ -46,21 +57,6 @@ namespace NDIGame
                 return;
             }
             focus = enemy;
-        }
-
-        private void OnDrawGizmos()
-        {
-            for(int i = 0; i < 50; i++)
-            {
-                int j = (i + 1) % 50;
-
-                //Vector3 pointA = transform.position + new 
-                //Vector3 pointB = 
-
-                //Vector3 pointA = transform.position + Vector3.left * 1.0f;
-
-            }
-
         }
 
     }
