@@ -10,6 +10,8 @@ enum Niveaudanger{
 
 enum TypeIst: string{
     case Virus = "Virus";
+    case Bacterie = "Bactérie";
+    case Champis = "Microchampignons";
 }
 
 class Ist{
@@ -49,8 +51,71 @@ class Ist{
             "VIH",
             "BOSS FINAL VIH HD.png",
             "VIH",
-            Niveaudanger::Moyen,
+            Niveaudanger::Eleve,
             TypeIst::Virus,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Chlamydiae",
+            "Chlamydiae HD.png",
+            "Chlamydiae",
+            Niveaudanger::Moyen,
+            TypeIst::Bacterie,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Gonococcie",
+            "Gonococcie HD.png",
+            "Gonococcie",
+            Niveaudanger::Faible,
+            TypeIst::Bacterie,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Hepatite B",
+            "Hepatite B HD.png",
+            "Hepatite B",
+            Niveaudanger::Eleve,
+            TypeIst::Virus,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Herpes",
+            "Herpes HD.png",
+            "Herpes",
+            Niveaudanger::Faible,
+            TypeIst::Virus,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Mycose",
+            "Mycose HD.png",
+            "Mycose",
+            Niveaudanger::Faible,
+            TypeIst::Champis,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Papillomavirus",
+            "Papillomavirus HD.png",
+            "Papillomavirus",
+            Niveaudanger::Eleve,
+            TypeIst::Virus,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Syphillis",
+            "Syphillis HD.png",
+            "Syphillis",
+            Niveaudanger::Eleve,
+            TypeIst::Bacterie,
             "",
             "desc traitements"
         );
