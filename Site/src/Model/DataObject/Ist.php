@@ -46,12 +46,12 @@ class Ist{
         $liste = [];
 
         $liste[] = new Ist(
-            "son petit nom",
-            "carteprovi.png",
-            "alt de l'image",
+            "VIH",
+            "BOSS FINAL VIH HD.png",
+            "VIH",
             Niveaudanger::Moyen,
             TypeIst::Virus,
-            "desc se protéger",
+            "",
             "desc traitements"
         );
 
