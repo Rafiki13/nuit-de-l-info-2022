@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace NDIGame
 {
@@ -13,6 +14,8 @@ namespace NDIGame
         public Waypoint SpawnPoint => spawnPoint;
 
         private List<Enemy> enemies;
+
+        public List<Enemy> Enemies => enemies;
 
         private void Awake()
         {
