@@ -30,8 +30,7 @@ class GenericController{
     }
 
     public static function jeu(){
-        self::afficheVue("view.php", [
-            "pagetitle" => "Jeu",
-            "pageName" => "index.html"]);
+        /*header('Location: __DIRindex.html');*/
+        self::redirect("index.html");
     }
 }
