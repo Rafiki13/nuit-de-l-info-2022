@@ -12,6 +12,13 @@ namespace NDIGame
 
         public Waypoint SpawnPoint => spawnPoint;
 
+        private List<Enemy> enemies;
+
+        private void Awake()
+        {
+            enemies = new List<Enemy>();
+        }
+
         public void Damage(int damage)
         {
             health -= damage;
@@ -20,6 +27,12 @@ namespace NDIGame
             {
                 Debug.Log("Game Over");
             }
+
+        }
+
+        public void AddEnemy(Enemy enemy)
+        {
+            enemies.Add(enemy);
         }
 
     }
