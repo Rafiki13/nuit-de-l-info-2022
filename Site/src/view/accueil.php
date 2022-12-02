@@ -14,7 +14,7 @@
             <div><p>Commencer le jeu</p></div>
             </a>
             <p>Bienvenue dans MSTower. Votre mission est simple, protéger le royaume d’Aphrodisa de la légion vénérienne.
-                Triomphez sur 3 niveau d’une dizaine de vagues d’ennemis successives à l’aide la puissante armée de votre royaumes !</p>
+                Triomphez sur 3 niveaux d’une dizaine de vagues d’ennemis successifs à l’aide la puissante armée de votre royaume !</p>
         </div>
 
 
@@ -23,16 +23,16 @@
             <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
             <div><p>Découvrir les MST</p></div>
             </a>
-            <p>Le bestiaire est un recueil regroupant toutes les IST présentes dans la vie et qui ont été retranscrites dans le jeu.
-                Elles ont toutes un nom, une description de leur effet sur l’humain, et une description dans le jeu et leur faiblesse, il peut donc être très intéressant de
-                lire ce ISTdex pour se renseigner, ne serait-ce que pour réussir notre jeu !</p>
+            <p>Le bestiaire est un recueil regroupant quelques IST présentes dans la vie et qui ont été retranscrites dans le jeu.
+                Elles ont toutes un nom, une description de leur effet sur l’humain, et une description dans le jeu et leur faiblesse. Il peut donc être très intéressant de
+                lire cet ISTdex pour se renseigner, ne serait-ce que pour réussir notre jeu !</p>
         </div>
 
 
     <div class="arttexte">
         <h2>Contacts importants</h2>
-        <ul>
         <p>Voici une liste non-exaustive des différents endroits et téléphones pour trouver plus d'informations:</p>
+        <ul>
             <li><a href="https://www.ameli.fr/assure/sante/themes/mst-ist/depistage">https://www.ameli.fr/assure/sante/themes/mst-ist/depistage</a></li>
             <li><a href="https://sida-info-services.org">https://sida-info-services.org</a></li>
             <li><a href="https://www.planning-familial.org/fr">https://www.planning-familial.org/fr</a></li>

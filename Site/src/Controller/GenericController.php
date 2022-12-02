@@ -25,7 +25,7 @@ class GenericController{
 
     public static function bestiaire(){
         self::afficheVue("view.php", [
-            "pagetitle" => "Bestiaire",
+            "pagetitle" => "ISTdex",
             "pageName" => "bestiaire.php"]);
     }
 
