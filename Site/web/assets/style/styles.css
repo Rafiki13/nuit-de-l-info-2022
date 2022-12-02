@@ -54,7 +54,7 @@ a {
   color: #5C2496;
 }
 #pageBestiaire .card .front {
-  transition: height 0s, opacity 150ms ease-in-out;
+  transition: height 0s, opacity 200ms ease-in-out;
 }
 #pageBestiaire .card .front img {
   border-top-left-radius: 7px;
