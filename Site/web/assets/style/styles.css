@@ -259,6 +259,7 @@ main {
   max-width: 350px;
   background-color: beige;
   cursor: pointer;
+  overflow: hidden;
 }
 #pageBestiaire .card h3, #pageBestiaire .card p, #pageBestiaire .card li {
   color: #5C2496;

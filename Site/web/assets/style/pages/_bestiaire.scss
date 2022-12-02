@@ -35,6 +35,7 @@ $arrondi: 7px;
     max-width: 350px;
     background-color: $couleurFondCarte;
     cursor: pointer;
+    overflow: hidden;
 
     h3, p, li{
       color: #5C2496;
