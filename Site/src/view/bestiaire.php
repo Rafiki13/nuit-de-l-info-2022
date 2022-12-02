@@ -12,7 +12,7 @@
                         <div class="front">
                             <img src="{$ist->getCheminImage()}" alt="{$ist->getAltImage()}">
                             <div class="cardHead">
-                                <h2>{$ist->getNom()}</h2>
+                                <h3>{$ist->getNom()}</h3>
                                 <div class="dangerosite">
                                     {$ist->getNiveauDanger()}
                                 </div>
@@ -20,9 +20,9 @@
                             <p class="type">{$ist->getType()}</p>
                         </div>
                         <div class="back">
-                            <h2>Se protéger</h2>
+                            <h3>Se protéger</h3>
                             <p>{$ist->getSeProteger()}</p>
-                            <h2>Traitements</h2>
+                            <h3>Traitements</h3>
                             <p>{$ist->getTraitements()}</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="front">
                             <img src="{$ist->getCheminImage()}" alt="{$ist->getAltImage()}">
                             <div class="cardHead">
-                                <h2>{$ist->getNom()}</h2>
+                                <h3>{$ist->getNom()}</h3>
                                 <div class="dangerosite">
                                     {$ist->getNiveauDanger()}
                                 </div>
@@ -47,9 +47,9 @@
                             <p class="type">{$ist->getType()}</p>
                         </div>
                         <div class="back">
-                            <h2>Se protéger</h2>
+                            <h3>Se protéger</h3>
                             <p>{$ist->getSeProteger()}</p>
-                            <h2>Traitements</h2>
+                            <h3>Traitements</h3>
                             <p>{$ist->getTraitements()}</p>
                         </div>
                     </div>
