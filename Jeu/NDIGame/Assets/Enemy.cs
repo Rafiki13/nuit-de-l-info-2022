@@ -25,6 +25,7 @@ namespace NDIGame
             start = GameManager.Instance.SpawnPoint;
             transform.position = start.transform.position;
             target = start.RandomNext;
+            GameManager.Instance.AddEnemy(this);
         }
 
         void Update()
@@ -64,20 +65,7 @@ namespace NDIGame
 
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            Debug.Log("Detected TriggerEnter event");
-        }
-
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            Debug.Log("Detected TriggerStay event");
-            Tower tower = other.GetComponent<Tower>();
-            if(tower)
-            {
-                tower.FocusEnemy(this);
-            }
-        }
     }
+
 }
 
