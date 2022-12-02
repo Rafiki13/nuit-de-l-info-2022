@@ -1,0 +1,95 @@
+$size: 60px;
+
+.preservatif{
+  width: $size;
+  height: $size;
+  background-image: url("../img/CAPOTE_FERMEE_HD.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  position: absolute;
+  transition: background 100ms ease-in-out;
+
+  &:hover{
+    background-image: url("../img/CAPOTE_OUVERTE_HD.png");
+  }
+
+  &:nth-child(1){
+    top: 15vh;
+    left: 10vw;
+  }
+  &:nth-child(2){
+    top: 15vh;
+    left: calc(95vw - $size);
+  }
+  &:nth-child(3){
+    top: 30vh;
+    left: 15vw;
+    transition-delay: 100ms;
+  }
+  &:nth-child(4){
+    top: 30vh;
+    left: calc(85vw - $size);
+    transition-delay: 100ms;
+  }
+  &:nth-child(5){
+    top: 45vh;
+    left: 5vw;
+    transition-delay: 200ms;
+  }
+  &:nth-child(6){
+    top: 45vh;
+    left: calc(95vw - $size);
+    transition-delay: 200ms;
+  }
+  &:nth-child(7){
+    top: 60vh;
+    left: 15vw;
+    transition-delay: 300ms;
+  }
+  &:nth-child(8){
+    top: 60vh;
+    left: calc(85vw - $size);
+    transition-delay: 300ms;
+  }
+  &:nth-child(9){
+    top: 75vh;
+    left: 5vw;
+    transition-delay: 400ms;
+  }
+  &:nth-child(10){
+    top: 75vh;
+    left: calc(95vw - $size);
+    transition-delay: 400ms;
+  }
+  &:nth-child(11){
+    top: 90vh;
+    left: 15vw;
+    transition-delay: 500ms;
+  }
+  &:nth-child(12){
+    top: 90vh;
+    left: calc(85vw - $size);
+    transition-delay: 500ms;
+  }
+  &:nth-child(13){
+    top: 105vh;
+    left: 5vw;
+    transition-delay: 600ms;
+  }
+  &:nth-child(14){
+    top: 105vh;
+    left: calc(95vw - $size);
+    transition-delay: 600ms;
+  }
+}
+
+#openPreservatifs{
+  display: none;
+
+  &:checked + div .preservatif{
+    background-image: url("../img/CAPOTE_OUVERTE_HD.png");
+  }
+}

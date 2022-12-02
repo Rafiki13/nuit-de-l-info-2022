@@ -1,4 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.preservatif {
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/CAPOTE_FERMEE_HD.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  transition: background 100ms ease-in-out;
+}
+.preservatif:hover {
+  background-image: url("../img/CAPOTE_OUVERTE_HD.png");
+}
+.preservatif:nth-child(1) {
+  top: 15vh;
+  left: 10vw;
+}
+.preservatif:nth-child(2) {
+  top: 15vh;
+  left: calc(95vw - 60px);
+}
+.preservatif:nth-child(3) {
+  top: 30vh;
+  left: 15vw;
+  transition-delay: 100ms;
+}
+.preservatif:nth-child(4) {
+  top: 30vh;
+  left: calc(85vw - 60px);
+  transition-delay: 100ms;
+}
+.preservatif:nth-child(5) {
+  top: 45vh;
+  left: 5vw;
+  transition-delay: 200ms;
+}
+.preservatif:nth-child(6) {
+  top: 45vh;
+  left: calc(95vw - 60px);
+  transition-delay: 200ms;
+}
+.preservatif:nth-child(7) {
+  top: 60vh;
+  left: 15vw;
+  transition-delay: 300ms;
+}
+.preservatif:nth-child(8) {
+  top: 60vh;
+  left: calc(85vw - 60px);
+  transition-delay: 300ms;
+}
+.preservatif:nth-child(9) {
+  top: 75vh;
+  left: 5vw;
+  transition-delay: 400ms;
+}
+.preservatif:nth-child(10) {
+  top: 75vh;
+  left: calc(95vw - 60px);
+  transition-delay: 400ms;
+}
+.preservatif:nth-child(11) {
+  top: 90vh;
+  left: 15vw;
+  transition-delay: 500ms;
+}
+.preservatif:nth-child(12) {
+  top: 90vh;
+  left: calc(85vw - 60px);
+  transition-delay: 500ms;
+}
+.preservatif:nth-child(13) {
+  top: 105vh;
+  left: 5vw;
+  transition-delay: 600ms;
+}
+.preservatif:nth-child(14) {
+  top: 105vh;
+  left: calc(95vw - 60px);
+  transition-delay: 600ms;
+}
+
+#openPreservatifs {
+  display: none;
+}
+#openPreservatifs:checked + div .preservatif {
+  background-image: url("../img/CAPOTE_OUVERTE_HD.png");
+}
+
 html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
   margin: 0;
   font-family: Nunito;
