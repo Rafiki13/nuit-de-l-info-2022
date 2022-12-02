@@ -5,13 +5,12 @@ namespace NDIGame
 {
 
     [System.Serializable]
-    public class Waypoint
+    public class Waypoint : MonoBehaviour
     {
 
         [SerializeField] private List<Waypoint> next = new List<Waypoint>();
-        [SerializeField] private Vector2 position;
 
-        public Vector2 Position => position;
+        public List<Waypoint> Next => next;
         
         public Waypoint RandomNext
         {
@@ -22,20 +21,22 @@ namespace NDIGame
 
         }
 
-    }
-
-    [System.Serializable]
-    public class Path
-    {
-
-        [SerializeField] private Waypoint[] path;
-        [SerializeField] private Waypoint start;
-
-        public Waypoint Start => start;
-
-        public Waypoint this[int index]
+        public void OnDrawGizmos()
         {
-            get => path[index];
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(transform.position, 0.2f);
+
+            if(next.Count == 0)
+            {
+                return;
+            }
+
+            foreach(Waypoint waypoint in next)
+            {
+                Gizmos.color = Color.black;
+                Gizmos.DrawLine(transform.position, waypoint.transform.position);
+            }
+
         }
 
     }
