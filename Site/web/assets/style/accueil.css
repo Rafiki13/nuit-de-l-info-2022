@@ -94,3 +94,12 @@ h1,h2,p{
 
 }
 
+@media screen and (max-width: 800px){
+    #jeu div, #bestiaire div{
+        width: 90vw;
+    }
+
+    .arttexte{
+        width: calc(90vw - 40px);
+    }
+}

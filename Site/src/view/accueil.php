@@ -7,7 +7,7 @@
 
     <a href="frontController.php?action=jeu" href="aller sur la page du jeu">
         <div class="img" id="jeu">
-            <div><p>Commencer</p></div>
+            <div><p>Commencer le jeu</p></div>
             <p>Bienvenue dans MSTower. Votre mission est simple, protéger le royaume d’Aphrodisa de la légion vénérienne.
                 Triomphez sur 3 niveau d’une dizaine de vagues d’ennemis successives à l’aide la puissante armée de votre royaumes !</p>
         </div>
@@ -15,7 +15,7 @@
 
     <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
         <div class="img" class="particle" id="bestiaire">
-            <div><p>Commencer</p></div>
+            <div><p>Découvrir les MST</p></div>
             <p>Le bestiaire est un recueil regroupant toutes les IST présentes dans la vie et qui ont été retranscrites dans le jeu.
                 Elles ont toutes un nom, une description de leur effet sur l’humain, et une description dans le jeu et leur faiblesse, il peut donc être très intéressant de
                 lire ce ISTdex pour se renseigner, ne serait-ce que pour réussir notre jeu !</p>
