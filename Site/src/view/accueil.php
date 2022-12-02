@@ -5,15 +5,19 @@
         <p>Le but de ce site est de vous sensibiliser sur le sida tout en vous divertissant.zeikyqcfvlvhfhsdfcvlsvhyldsvbldscbv</p>
     </div>
 
-    <div class="img"id="jeu">
-        <div><p>Commencez</p></div>
-        <p>Lore du jeu</p>
-    </div>
+    <a href="frontController.php?action=jeu" href="aller sur la page du jeu">
+        <div class="img" id="jeu">
+            <div><p>Commencer</p></div>
+            <p>Lore du jeu</p>
+        </div>
+    </a>
 
-    <div class="img" id="bestiaire">
-        <div><p>Commencer</p></div>
-        <p>Bestiaire et explications</p>
-    </div>
+    <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
+        <div class="img" id="bestiaire">
+            <div><p>Commencer</p></div>
+            <p>Bestiaire et explications</p>
+        </div>
+    </a>
 
     <div class="arttexte">
         <h2>Contacts importants</h2>

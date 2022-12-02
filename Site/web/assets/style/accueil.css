@@ -12,18 +12,22 @@ h1,h2,p{
 }
 
 .img, .arttexte{
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0 30px 0;
 }
 
 .arttexte{
     padding:20px;
     background-color:#5C2496;
     border-radius:10px;
+    width: calc(80vw - 40px);
 }
 
-.arttexte ul li a{
+.arttexte a, .arttexte p, .arttexte h2, .arttexte h1{
     text-decoration:none;
     color:beige;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .img div{
@@ -34,21 +38,24 @@ h1,h2,p{
     display:flex;
     flex-direction:column;
     align-items: center;
-    width:90%;
+    width:100%;
+}
+
+#jeu div, #bestiaire div{
+    width:80vw;
+    /*height: 274px;*/
+    aspect-ratio: 2.56;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+
 }
 
 #jeu div{
     background: url("../img/bandeaujeu2.png");
-    width:702px;
-    height: 274px;
-    background-size: 100% 100%;
 }
 
 #bestiaire div{
     background: url("../img/bandeaubestiaire.png");
-    width:702px;
-    height: 274px;
-    background-size: 100% 100%;
 }
 
 .img div:not(:hover) p{

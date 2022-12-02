@@ -28,4 +28,10 @@ class GenericController{
             "pagetitle" => "Bestiaire",
             "pageName" => "bestiaire.php"]);
     }
+
+    public static function jeu(){
+        self::afficheVue("view.php", [
+            "pagetitle" => "Jeu",
+            "pageName" => "jeu.php"]);
+    }
 }
