@@ -48,9 +48,13 @@ a {
   width: calc(100% - 40px);
   max-width: 350px;
   background-color: beige;
+  cursor: pointer;
 }
-#bestiaire .card h2, #bestiaire .card p {
+#bestiaire .card h3, #bestiaire .card p {
   color: #5C2496;
+}
+#bestiaire .card .front {
+  transition: height 0s, opacity 150ms ease-in-out;
 }
 #bestiaire .card .front img {
   border-top-left-radius: 7px;
@@ -82,21 +86,26 @@ a {
   padding: 0 10px;
   position: absolute;
   bottom: 10px;
-  lefet: 0;
+  left: 0;
   text-align: right;
 }
 #bestiaire .card .back {
-  display: none;
+  /*display: none;*/
+  height: 0;
+  opacity: 0;
   padding: 10px;
 }
 #bestiaire .card .back p {
   padding-left: 20px;
 }
 #bestiaire .card:hover .front {
-  display: none;
+  /*display:none;*/
+  height: 0;
+  opacity: 0;
 }
 #bestiaire .card:hover .back {
-  display: block;
+  /*display:block;*/
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
