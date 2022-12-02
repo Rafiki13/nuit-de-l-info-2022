@@ -41,7 +41,7 @@
   left: calc(95vw - 60px);
   transition-delay: 200ms;
 }
-.preservatif #rickroll {
+.preservatif#rickroll {
   top: 60vh;
   left: 15vw;
   transition-delay: 300ms;
@@ -84,6 +84,9 @@
 
 #openPreservatifs {
   display: none;
+}
+#openPreservatifs:checked + div .preservatif {
+  background-image: url("../img/CAPOTE_OUVERTE_HD.png");
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
