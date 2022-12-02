@@ -14,3 +14,15 @@ h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite, li {
 a{
   text-decoration: none;
 }
+
+footer{
+  padding: 5px 10px;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

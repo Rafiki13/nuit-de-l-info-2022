@@ -1,5 +1,11 @@
-<h1>ISTdex</h1>
-<p>Bienvenue aux bestiaires, ici se trouve toutes les différentes IST et maladies iojdfshfioh doifchv</p>
+<h1 id="titleBestiaire">ISTdex</h1>
+<p>
+    Bienvenue sur l'ISTdex, vous retrouverez ici les différentes IST qui vous attaquent dans MSTower !
+    Vous pouvez voir les stats de ces "créatures" sur notre jeu, mais aussi des données réelles, nottament sur les
+    moyennes de s'en protéger ou encore les traitements que vous pouvez prendre si vous êtes contaminé.
+</p>
+
+
 <div id="pageBestiaire">
     <h2>Celles présentes dans le jeu</h2>
     <div class="cardContainer">

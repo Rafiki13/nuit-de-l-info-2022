@@ -9,11 +9,123 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite, li {
-  color: white;
+  color: beige;
 }
 
 a {
   text-decoration: none;
+}
+
+footer {
+  padding: 5px 10px;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#intro div {
+  display: flex;
+  align-items: center;
+}
+#intro div img {
+  margin-left: 20px;
+}
+
+.img, .arttexte {
+  margin: 30px 0 30px 0;
+}
+
+.arttexte {
+  padding: 20px;
+  background-color: #5C2496;
+  border-radius: 10px;
+  width: calc(50vw - 40px);
+}
+
+.arttexte a, .arttexte p, .arttexte h2, .arttexte h1 {
+  text-decoration: none;
+  color: beige;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: x-large;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.img div {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.img div:hover p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: x-large;
+}
+.img > p {
+  width: 50vw;
+  font-size: x-large;
+  text-indent: 5%;
+}
+.img div:not(:hover) p {
+  display: none;
+}
+
+#jeu div, #bestiaire div {
+  width: 50vw;
+  /*height: 274px;*/
+  aspect-ratio: 2.56;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  transition-duration: 1s;
+}
+
+#jeu div {
+  background: url("../img/bandeaujeu2.png");
+}
+
+#bestiaire div {
+  background: url("../img/bandeaubestiaire.png");
+}
+
+#jeu div:hover, #bestiaire div:hover {
+  background-position: center;
+  background-size: 150% 150% !important;
+}
+
+@media screen and (max-width: 800px) {
+  #jeu div, #bestiaire div {
+    width: 90vw;
+  }
+  .arttexte {
+    width: calc(90vw - 40px);
+  }
+}
+#titleBestiaire {
+  margin: 20px 0;
+}
+
+#titleBestiaire + p {
+  margin-bottom: 50px;
 }
 
 #pageBestiaire .cardContainer {

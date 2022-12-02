@@ -1,5 +1,12 @@
 $arrondi: 7px;
 
+#titleBestiaire{
+  margin: 20px 0;
+}
+#titleBestiaire + p{
+  margin-bottom: 50px;
+}
+
 #pageBestiaire {
   .cardContainer {
     display: grid;
