@@ -7,23 +7,28 @@ main{
     align-items: center;
 }
 
+h1,h2,p{
+    color:beige;
+}
+
 .img, .arttexte{
     margin: 30px 0px 30px 0px;
 }
 
 .arttexte{
     padding:20px;
-    background-color:blueviolet;
+    background-color:#5C2496;
+    border-radius:10px;
 }
 
 .arttexte ul li a{
     text-decoration:none;
-    color:white;
+    color:beige;
 }
 
 .img div{
     margin-bottom:10px;
-
+    border-radius:10px;
 }
 .img{
     display:flex;
@@ -32,12 +37,18 @@ main{
     width:90%;
 }
 
-.img div{
-    background: url("../img/jeuexemple.jpg");
-    width:50%;
-    height: 140px;
+#jeu div{
+    background: url("../img/bandeaujeu2.png");
+    width:702px;
+    height: 274px;
     background-size: 100% 100%;
+}
 
+#bestiaire div{
+    background: url("../img/bestiaire.jpg");
+    width:702px;
+    height: 274px;
+    background-size: 100% 100%;
 }
 
 .img div:not(:hover) p{

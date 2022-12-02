@@ -5,13 +5,13 @@
         <p>Le but de ce site est de vous sensibiliser sur le sida tout en vous divertissant.zeikyqcfvlvhfhsdfcvlsvhyldsvbldscbv</p>
     </div>
 
-    <div class="img">
+    <div class="img"id="jeu">
         <div><p>Commencez</p></div>
         <p>Lore du jeu</p>
     </div>
 
-    <div class="img">
-        <div><p>Commencez</p></div>
+    <div class="img" id="bestiaire">
+        <div><p>Commencer</p></div>
         <p>Bestiaire et explications</p>
     </div>
 
