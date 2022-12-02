@@ -100,8 +100,8 @@ class Ist{
             "Mycose",
             Niveaudanger::Faible,
             TypeIst::Champis,
-            [],
-            []
+            ["Utilisation du préservatif", "Toilette intime", "Vêtements amples", "Sous-vêtements non synthétiques", "contraception faible en oestrogènes", "Prise de probiotiques vaginaux", "..."],
+            ["Ovules antifongiques", "Crème", "Traitement entre partenaires sexuels"]
         );
         $liste[] = new Ist(
             "Papillomavirus",
@@ -109,8 +109,8 @@ class Ist{
             "Papillomavirus",
             Niveaudanger::Eleve,
             TypeIst::Virus,
-            [],
-            []
+            ["Utilisation du préservatif", "Vaccination", "Dépistage"],
+            ["Crèmes", "Brûlées à l’azote ou au laser", "Extraction locale", "Colposcopie"]
         );
         $liste[] = new Ist(
             "Syphillis",
@@ -118,8 +118,8 @@ class Ist{
             "Syphillis",
             Niveaudanger::Eleve,
             TypeIst::Bacterie,
-            [],
-            []
+            ["Utilisation du préservatif", "Dépistage", "Traitements prescrits"],
+            ["Antibiotiques", "Injection de pénicilline"]
         );
 
         return $liste;
@@ -134,8 +134,8 @@ class Ist{
             "Morpion",
             Niveaudanger::Faible,
             TypeIst::Insecte,
-            [],
-            []
+            ["Bonne hygiène intime", "Dépistage", "Éviter le partage ou l’essayage de sous vêtement", "Raser les poils pubiens en cas de morpions"],
+            ["Produits d'hygiène médicamenteux", "Nettoyage des vêtements"]
         );
         $liste[] = new Ist(
             "Amogus",
@@ -143,8 +143,8 @@ class Ist{
             "Amogus",
             Niveaudanger::Eleve,
             TypeIst::EasterEgg,
-            [],
-            []
+            ["Ne lui faites pas confiance et ne restez pas seul avec lui"],
+            ["L'expédier dans l’espace grâce à un vote collaboratif"]
         );
 
         return $liste;
