@@ -1,6 +1,6 @@
 <h1> Bestiaire</h1>
 <p>Bienvenue aux bestiaires, ici se trouve toutes les différentes IST et maladies iojdfshfioh doifchv</p>
-<div id="bestiaire">
+<div id="pageBestiaire">
     <h2>Celles présentes dans le jeu</h2>
     <div class="cardContainer">
         <?php
