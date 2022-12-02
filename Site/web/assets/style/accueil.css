@@ -47,11 +47,12 @@ h1,h2,p{
     aspect-ratio: 2.56;
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
-
+    transition-duration: 1s;
 }
 
 #jeu div{
     background: url("../img/bandeaujeu2.png");
+
 }
 
 #bestiaire div{
@@ -75,6 +76,8 @@ h1,h2,p{
 
 #jeu div:hover, #bestiaire div:hover{
     background-position: center;
-   background-size: 150% !important;
+
+    background-size: 150% 150% !important;
+
 }
 
