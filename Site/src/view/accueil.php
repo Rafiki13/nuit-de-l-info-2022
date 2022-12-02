@@ -18,7 +18,7 @@
 
 <div class="arttexte" id="intro">
     <div>
-    <h1>Bienvenue sur MSTower !</h1>
+    <h1>Bienvenue sur ISTower !</h1>
         <label for="openPreservatifs">
             <img src="assets/img/LogoSida.png" alt="logosidaction">
         </label>
@@ -31,7 +31,7 @@
         <a href="frontController.php?action=jeu" href="aller sur la page du jeu">
         <div><p>Commencer le jeu</p></div>
         </a>
-        <p>Bienvenue dans MSTower. Votre mission est simple, protéger le royaume d’Aphrodisa de la légion vénérienne.
+        <p>Bienvenue dans ISTower. Votre mission est simple, protéger le royaume d’Aphrodisa de la légion vénérienne.
             Triomphez sur 3 niveaux d’une dizaine de vagues d’ennemis successifs à l’aide la puissante armée de votre royaume !</p>
     </div>
 

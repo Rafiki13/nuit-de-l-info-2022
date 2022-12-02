@@ -81,6 +81,11 @@
   left: calc(95vw - 60px);
   transition-delay: 600ms;
 }
+@media screen and (max-width: 800px) {
+  .preservatif {
+    display: none;
+  }
+}
 
 #openPreservatifs {
   display: none;

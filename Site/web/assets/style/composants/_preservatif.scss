@@ -84,6 +84,9 @@ $size: 60px;
     left: calc(95vw - $size);
     transition-delay: 600ms;
   }
+  @media screen and (max-width: 800px){
+    display: none;
+  }
 }
 
 #openPreservatifs{

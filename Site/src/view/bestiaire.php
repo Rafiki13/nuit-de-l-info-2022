@@ -1,6 +1,6 @@
 <h1 id="titleBestiaire">ISTdex</h1>
 <p>
-    Bienvenue sur l'ISTdex, vous retrouverez ici les différentes IST qui vous attaquent dans MSTower !
+    Bienvenue sur l'ISTdex, vous retrouverez ici les différentes IST qui vous attaquent dans ISTower !
     Vous pouvez voir les stats de ces "créatures" sur notre jeu, mais aussi des données réelles, nottament sur les
     moyennes de s'en protéger ou encore les traitements que vous pouvez prendre si vous êtes contaminé.
 </p>
@@ -10,7 +10,7 @@
     <h2>Celles présentes dans le jeu</h2>
     <div class="cardContainer">
         <?php
-            require_once __DIR__ . '/../Model/dataObject/Ist.php';
+            require_once __DIR__ . '/../Model/DataObject/Ist.php';
 
             foreach(\App\Ndi\Model\DataObject\Ist::getInGame() as $ist){
                 $protection = "<ul>";

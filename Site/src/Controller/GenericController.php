@@ -19,7 +19,7 @@ class GenericController{
 
     public static function accueil(){
         self::afficheVue("view.php", [
-            "pagetitle" => "Accueil",
+            "pagetitle" => "ISTower",
             "pageName" => "accueil.php"]);
     }
 
