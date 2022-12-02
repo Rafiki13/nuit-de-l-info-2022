@@ -7,14 +7,14 @@
 
     <a href="frontController.php?action=jeu" href="aller sur la page du jeu">
         <div class="img" id="jeu">
-            <div><p>Commencer</p></div>
+            <div><p>Commencer le jeu</p></div>
             <p>Lore du jeu</p>
         </div>
     </a>
 
     <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
         <div class="img" id="bestiaire">
-            <div><p>Commencer</p></div>
+            <div><p>Découvrir les MST</p></div>
             <p>Bestiaire et explications</p>
         </div>
     </a>
