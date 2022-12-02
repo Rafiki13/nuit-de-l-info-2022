@@ -6,7 +6,7 @@
     <div class="preservatif"></div>
     <div class="preservatif"></div>
     <div class="preservatif"></div>
-    <div class="preservatif"></div>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div class="preservatif" id="rickroll"></div></a>
     <div class="preservatif"></div>
     <div class="preservatif"></div>
     <div class="preservatif"></div>
