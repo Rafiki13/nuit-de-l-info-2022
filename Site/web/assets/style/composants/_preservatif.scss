@@ -44,7 +44,7 @@ $size: 60px;
     left: calc(95vw - $size);
     transition-delay: 200ms;
   }
-  &:nth-child(7){
+  #rickroll{
     top: 60vh;
     left: 15vw;
     transition-delay: 300ms;
@@ -88,8 +88,4 @@ $size: 60px;
 
 #openPreservatifs{
   display: none;
-
-  &:checked + div .preservatif{
-    background-image: url("../img/CAPOTE_OUVERTE_HD.png");
-  }
 }
