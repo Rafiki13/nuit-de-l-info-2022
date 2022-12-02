@@ -52,6 +52,18 @@
     <div class="cardContainer">
         <?php
         foreach(\App\Ndi\Model\DataObject\Ist::getNotInGame() as $ist){
+            $protection = "<ul>";
+            foreach($ist->getSeProteger() as $p){
+                $protection .= "<li>$p</li>";
+            }
+            $protection.= "</ul>";
+
+            $traitements = "<ul>";
+            foreach($ist->getTraitements() as $p){
+                $traitements .= "<li>$p</li>";
+            }
+            $protection.= "</ul>";
+
             echo <<<HTML
                     <div class="card">
                         <div class="front">
@@ -66,9 +78,9 @@
                         </div>
                         <div class="back">
                             <h3>Se protéger</h3>
-                            <p>{$ist->getSeProteger()}</p>
+                            {$protection}
                             <h3>Traitements</h3>
-                            <p>{$ist->getTraitements()}</p>
+                            {$traitements}
                         </div>
                     </div>
                 HTML;
