@@ -24,15 +24,18 @@ $arrondi: 7px;
     position: relative;
     border-radius: $arrondi;
     min-width: 250px;
-    width: calc(100% - 40px); //TODO supprimer
+    width: calc(100% - 40px);
     max-width: 350px;
-
     background-color: $couleurFondCarte;
-    h2, p{
+    cursor: pointer;
+
+    h3, p{
       color: #5C2496;
     }
 
     .front {
+      transition: height 0s, opacity 150ms ease-in-out;
+
       img{
         border-top-left-radius: $arrondi;
         border-top-right-radius: $arrondi;
@@ -68,13 +71,15 @@ $arrondi: 7px;
         padding: 0 10px;
         position:absolute;
         bottom: 10px;
-        lefet: 0;
+        left: 0;
         text-align: right;
       }
     }
 
     .back {
-      display: none;
+      /*display: none;*/
+      height: 0;
+      opacity: 0;
       padding: 10px;
 
       p{
@@ -84,11 +89,14 @@ $arrondi: 7px;
 
     &:hover{
       .front{
-        display:none;
+        /*display:none;*/
+        height: 0;
+        opacity: 0;
       }
 
       .back{
-        display:block;
+        /*display:block;*/
+        opacity: 1;
       }
     }
   }
