@@ -11,7 +11,7 @@ namespace NDIGame
 
         public Path Current => paths[path];
 
-        public Vector2 SpawnPoint => paths[path][0].Position;
+        public Waypoint SpawnPoint => paths[path][0];
 
     }
 

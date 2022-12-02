@@ -6,28 +6,40 @@ namespace NDIGame
     {
         [SerializeField] private int life;
         [SerializeField] private int speed;
-        [SerializeField] private int aR;
-        [SerializeField] private int mR;
-        [SerializeField] private int dmgT;
-
-        private Vector2 startPos;
-        private Vector2 endPos;
+        [SerializeField] private int defense;
+        [SerializeField] private int magicDefense;
+        [SerializeField] private int damages;
 
         private float maxDistance;
         private float distance;
 
-        private int waypoint;
+        private int start;
+        private int end;
 
         void Start()
         {
-            transform.position = ;
+            Path current = GameManager.Instance.Current;
+
+            start = current.StartingPoint;
+            end = current[start].RandomNext;
+            transform.position = current[start].Position;
         }
         
         void Update()
         {
-            transform.position = Vector2.Lerp(, endingPoint, distance / maxDistance);
+            Path current = GameManager.Instance.Current;
+            if(distance >= maxDistance)
+            {
+                start = end;
+                end = current[start].RandomNext;
+
+                distance = 0f;
+                maxDistance = Vector2.Distance(current[start].Position, current[end].Position);
+                return;
+            }
+            Vector3 endPoint = current[end].Position + Random.insideUnitCircle;
+            transform.position = Vector2.Lerp(current[start].Position, current[end].Position, distance / maxDistance);
             distance += speed * Time.deltaTime;
-            //Genre position += vitesse * Time.deltaTime
         }
 
     }
