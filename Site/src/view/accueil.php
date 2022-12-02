@@ -36,7 +36,7 @@
             <li><a href="https://www.ameli.fr/assure/sante/themes/mst-ist/depistage">https://www.ameli.fr/assure/sante/themes/mst-ist/depistage</a></li>
             <li><a href="https://sida-info-services.org">https://sida-info-services.org</a></li>
             <li><a href="https://www.planning-familial.org/fr">https://www.planning-familial.org/fr</a></li>
-            <li><p>Sida Info Service: 0 800 840 800</p></li>
+            <li><p>Sida Info Service: <a href="tel:0800840800">0 800 840 800</a></p></li>
         </ul>
     </div>
 </main>

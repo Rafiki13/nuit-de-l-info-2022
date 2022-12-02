@@ -12,6 +12,8 @@ enum TypeIst: string{
     case Virus = "Virus";
     case Bacterie = "Bactérie";
     case Champis = "Microchampignons";
+    case Insecte = "Insecte";
+    case EasterEgg = "Easter Egg";
 }
 
 class Ist{
@@ -127,12 +129,21 @@ class Ist{
         $liste = [];
 
         $liste[] = new Ist(
-            "uwu",
-            "carteprovi.png",
-            "alt de l'image",
+            "Morpion",
+            "Morpion_HD.png",
+            "Morpion",
+            Niveaudanger::Faible,
+            TypeIst::Insecte,
+            "",
+            "desc traitements"
+        );
+        $liste[] = new Ist(
+            "Amogus",
+            "AMOGUS.png",
+            "Amogus",
             Niveaudanger::Eleve,
-            TypeIst::Virus,
-            "desc se protéger",
+            TypeIst::EasterEgg,
+            "",
             "desc traitements"
         );
 
