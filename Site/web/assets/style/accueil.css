@@ -19,7 +19,7 @@ h1,h2,p{
     padding:20px;
     background-color:#5C2496;
     border-radius:10px;
-    width: calc(80vw - 40px);
+    width: calc(50vw - 40px);
 }
 
 .arttexte a, .arttexte p, .arttexte h2, .arttexte h1{
@@ -42,7 +42,7 @@ h1,h2,p{
 }
 
 #jeu div, #bestiaire div{
-    width:80vw;
+    width:50vw;
     /*height: 274px;*/
     aspect-ratio: 2.56;
     background-size: 100% 100% !important;
@@ -72,3 +72,9 @@ h1,h2,p{
     cursor:pointer;
     font-size:x-large;
 }
+
+#jeu div:hover, #bestiaire div:hover{
+    background-position: center;
+   background-size: 150% !important;
+}
+

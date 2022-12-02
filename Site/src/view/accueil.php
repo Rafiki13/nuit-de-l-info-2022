@@ -13,7 +13,7 @@
     </a>
 
     <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
-        <div class="img" id="bestiaire">
+        <div class="img" class="particle" id="bestiaire">
             <div><p>Commencer</p></div>
             <p>Bestiaire et explications</p>
         </div>
