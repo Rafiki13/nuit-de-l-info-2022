@@ -1,6 +1,6 @@
 $arrondi: 7px;
 
-#bestiaire {
+#pageBestiaire {
   .cardContainer {
     display: grid;
 
@@ -34,9 +34,10 @@ $arrondi: 7px;
     }
 
     .front {
-      transition: height 0s, opacity 150ms ease-in-out;
+      transition: height 0s, opacity 200ms ease-in-out;
 
       img{
+        background: radial-gradient(circle, rgba(7,1,101,1) 0%, rgba(36,36,153,1) 35%, rgba(0,212,255,1) 100%);
         border-top-left-radius: $arrondi;
         border-top-right-radius: $arrondi;
         border-bottom: solid $couleurTexteCarte 4px;
