@@ -16,30 +16,30 @@ a {
   text-decoration: none;
 }
 
-#bestiaire .cardContainer {
+#pageBestiaire .cardContainer {
   display: grid;
 }
 @media screen and (max-width: 600px) {
-  #bestiaire .cardContainer {
+  #pageBestiaire .cardContainer {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  #bestiaire .cardContainer {
+  #pageBestiaire .cardContainer {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
-  #bestiaire .cardContainer {
+  #pageBestiaire .cardContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1200px) {
-  #bestiaire .cardContainer {
+  #pageBestiaire .cardContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-#bestiaire .card {
+#pageBestiaire .card {
   margin: 10px 20px;
   aspect-ratio: 0.7;
   position: relative;
@@ -50,38 +50,38 @@ a {
   background-color: beige;
   cursor: pointer;
 }
-#bestiaire .card h3, #bestiaire .card p {
+#pageBestiaire .card h3, #pageBestiaire .card p {
   color: #5C2496;
 }
-#bestiaire .card .front {
+#pageBestiaire .card .front {
   transition: height 0s, opacity 150ms ease-in-out;
 }
-#bestiaire .card .front img {
+#pageBestiaire .card .front img {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom: solid #5C2496 4px;
   width: 100%;
 }
-#bestiaire .card .front .cardHead {
+#pageBestiaire .card .front .cardHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
-#bestiaire .card .front .cardHead .dangerosite {
+#pageBestiaire .card .front .cardHead .dangerosite {
   display: flex;
 }
-#bestiaire .card .front .cardHead .dangerosite > div {
+#pageBestiaire .card .front .cardHead .dangerosite > div {
   margin: 2.5px;
   width: 15px;
   height: 15px;
   border-radius: 10px;
   background-color: #5C2496;
 }
-#bestiaire .card .front .cardHead .dangerosite > div.active {
+#pageBestiaire .card .front .cardHead .dangerosite > div.active {
   background-color: deeppink;
 }
-#bestiaire .card .front .type {
+#pageBestiaire .card .front .type {
   width: calc(100% - 20px);
   padding: 0 10px;
   position: absolute;
@@ -89,21 +89,21 @@ a {
   left: 0;
   text-align: right;
 }
-#bestiaire .card .back {
+#pageBestiaire .card .back {
   /*display: none;*/
   height: 0;
   opacity: 0;
   padding: 10px;
 }
-#bestiaire .card .back p {
+#pageBestiaire .card .back p {
   padding-left: 20px;
 }
-#bestiaire .card:hover .front {
+#pageBestiaire .card:hover .front {
   /*display:none;*/
   height: 0;
   opacity: 0;
 }
-#bestiaire .card:hover .back {
+#pageBestiaire .card:hover .back {
   /*display:block;*/
   opacity: 1;
 }
