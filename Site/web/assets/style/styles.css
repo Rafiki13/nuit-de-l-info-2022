@@ -57,6 +57,7 @@ a {
   transition: height 0s, opacity 200ms ease-in-out;
 }
 #pageBestiaire .card .front img {
+  background: radial-gradient(circle, rgb(7, 1, 101) 0%, rgb(36, 36, 153) 35%, rgb(0, 212, 255) 100%);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom: solid #5C2496 4px;
