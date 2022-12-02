@@ -22,8 +22,8 @@ class Ist{
     private string $altImage;
     private Niveaudanger $niveauDanger;
     private TypeIst $type;
-    private string $seProteger;
-    private string $traitements;
+    private array $seProteger;
+    private array $traitements;
 
     /**
      * @param string $nom
@@ -34,7 +34,7 @@ class Ist{
      * @param string $seProteger
      * @param string $traitements
      */
-    public function __construct(string $nom, string $nomImage, string $altImage, Niveaudanger $niveauDanger, TypeIst $type, string $seProteger, string $traitements)
+    public function __construct(string $nom, string $nomImage, string $altImage, Niveaudanger $niveauDanger, TypeIst $type, array $seProteger, array $traitements)
     {
         $this->nom = $nom;
         $this->nomImage = $nomImage;
@@ -55,8 +55,8 @@ class Ist{
             "VIH",
             Niveaudanger::Eleve,
             TypeIst::Virus,
-            "",
-            "desc traitements"
+            ["Utilisation du préservatif", "Éviter tout contact avec du sang en cas de blessure", "Utilisation d'un traitement (la PrEP)"],
+            ["traitements post-expositions antirétroviraux"]
         );
         $liste[] = new Ist(
             "Chlamydiae",
@@ -64,8 +64,8 @@ class Ist{
             "Chlamydiae",
             Niveaudanger::Moyen,
             TypeIst::Bacterie,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Gonococcie",
@@ -73,8 +73,8 @@ class Ist{
             "Gonococcie",
             Niveaudanger::Faible,
             TypeIst::Bacterie,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Hepatite B",
@@ -82,8 +82,8 @@ class Ist{
             "Hepatite B",
             Niveaudanger::Eleve,
             TypeIst::Virus,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Herpes",
@@ -91,8 +91,8 @@ class Ist{
             "Herpes",
             Niveaudanger::Faible,
             TypeIst::Virus,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Mycose",
@@ -100,8 +100,8 @@ class Ist{
             "Mycose",
             Niveaudanger::Faible,
             TypeIst::Champis,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Papillomavirus",
@@ -109,8 +109,8 @@ class Ist{
             "Papillomavirus",
             Niveaudanger::Eleve,
             TypeIst::Virus,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Syphillis",
@@ -118,8 +118,8 @@ class Ist{
             "Syphillis",
             Niveaudanger::Eleve,
             TypeIst::Bacterie,
-            "",
-            "desc traitements"
+            [],
+            []
         );
 
         return $liste;
@@ -134,8 +134,8 @@ class Ist{
             "Morpion",
             Niveaudanger::Faible,
             TypeIst::Insecte,
-            "",
-            "desc traitements"
+            [],
+            []
         );
         $liste[] = new Ist(
             "Amogus",
@@ -143,8 +143,8 @@ class Ist{
             "Amogus",
             Niveaudanger::Eleve,
             TypeIst::EasterEgg,
-            "",
-            "desc traitements"
+            [],
+            []
         );
 
         return $liste;
@@ -204,7 +204,7 @@ class Ist{
     /**
      * @return string
      */
-    public function getSeProteger(): string
+    public function getSeProteger(): array
     {
         return $this->seProteger;
     }
@@ -212,7 +212,7 @@ class Ist{
     /**
      * @return string
      */
-    public function getTraitements(): string
+    public function getTraitements(): array
     {
         return $this->traitements;
     }

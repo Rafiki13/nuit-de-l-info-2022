@@ -162,7 +162,7 @@ main {
   background-color: beige;
   cursor: pointer;
 }
-#pageBestiaire .card h3, #pageBestiaire .card p {
+#pageBestiaire .card h3, #pageBestiaire .card p, #pageBestiaire .card li {
   color: #5C2496;
 }
 #pageBestiaire .card .front {
@@ -208,8 +208,8 @@ main {
   opacity: 0;
   padding: 10px;
 }
-#pageBestiaire .card .back p {
-  padding-left: 20px;
+#pageBestiaire .card .back ul {
+  margin: 0;
 }
 #pageBestiaire .card:hover .front {
   /*display:none;*/

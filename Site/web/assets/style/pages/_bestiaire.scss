@@ -36,7 +36,7 @@ $arrondi: 7px;
     background-color: $couleurFondCarte;
     cursor: pointer;
 
-    h3, p{
+    h3, p, li{
       color: #5C2496;
     }
 
@@ -90,8 +90,8 @@ $arrondi: 7px;
       opacity: 0;
       padding: 10px;
 
-      p{
-        padding-left: 20px;
+      ul{
+        margin: 0;
       }
     }
 
