@@ -56,7 +56,7 @@ class Ist{
             Niveaudanger::Eleve,
             TypeIst::Virus,
             ["Utilisation du préservatif", "Éviter tout contact avec du sang en cas de blessure", "Utilisation d'un traitement (la PrEP)"],
-            ["traitements post-expositions antirétroviraux"]
+            ["Traitements post-expositions antirétroviraux"]
         );
         $liste[] = new Ist(
             "Chlamydiae",
@@ -64,8 +64,8 @@ class Ist{
             "Chlamydiae",
             Niveaudanger::Moyen,
             TypeIst::Bacterie,
-            [],
-            []
+            ["Utilisation du préservatif", "Adopter une bonne hygiène intime"],
+            ["Antibiotiques"]
         );
         $liste[] = new Ist(
             "Gonococcie",
@@ -73,8 +73,8 @@ class Ist{
             "Gonococcie",
             Niveaudanger::Faible,
             TypeIst::Bacterie,
-            [],
-            []
+            ["Utilisation du préservatif"],
+            ["Antibiotiques"]
         );
         $liste[] = new Ist(
             "Hepatite B",
@@ -82,8 +82,8 @@ class Ist{
             "Hepatite B",
             Niveaudanger::Eleve,
             TypeIst::Virus,
-            [],
-            []
+            ["Utilisation du préservatif", "Vaccination"],
+            ["Antiviraux comprimés ou interféron par voie injectable en sous cutané"]
         );
         $liste[] = new Ist(
             "Herpes",
@@ -91,8 +91,8 @@ class Ist{
             "Herpes",
             Niveaudanger::Faible,
             TypeIst::Virus,
-            [],
-            []
+            ["Utilisation du préservatif", "Éviter les rapports avec des personnes atteintes de lésions non guéries", "Digue dentaire"],
+            ["Médicament antiviral (comprimés)", "Crèmes pour cicatrisation"]
         );
         $liste[] = new Ist(
             "Mycose",
