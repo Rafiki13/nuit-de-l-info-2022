@@ -32,6 +32,6 @@ class GenericController{
     public static function jeu(){
         self::afficheVue("view.php", [
             "pagetitle" => "Jeu",
-            "pageName" => "jeu.php"]);
+            "pageName" => "index.html"]);
     }
 }
