@@ -1,21 +1,24 @@
 <main>
 
-    <div class="arttexte">
-        <h1>Bienvenue sur ISTDefenseTheGame !</h1>
-        <p>Le but de ce site est de vous sensibiliser sur le sida tout en vous divertissant.zeikyqcfvlvhfhsdfcvlsvhyldsvbldscbv</p>
+    <div class="arttexte" id="intro">
+        <h1>Bienvenue sur MSTower !</h1>
+        <p>Le but de ce site est de vous sensibiliser sur le sida tout en vous divertissant. Bonne navigation!</p>
     </div>
 
     <a href="frontController.php?action=jeu" href="aller sur la page du jeu">
         <div class="img" id="jeu">
             <div><p>Commencer</p></div>
-            <p>Lore du jeu</p>
+            <p>Bienvenue dans MSTower. Votre mission est simple, protéger le royaume d’Aphrodisa de la légion vénérienne.
+                Triomphez sur 3 niveau d’une dizaine de vagues d’ennemis successives à l’aide la puissante armée de votre royaumes !</p>
         </div>
     </a>
 
     <a href="frontController.php?action=bestiaire" href="aller sur la page du Bestiaire">
         <div class="img" class="particle" id="bestiaire">
             <div><p>Commencer</p></div>
-            <p>Bestiaire et explications</p>
+            <p>Le bestiaire est un recueil regroupant toutes les IST présentes dans la vie et qui ont été retranscrites dans le jeu.
+                Elles ont toutes un nom, une description de leur effet sur l’humain, et une description dans le jeu et leur faiblesse, il peut donc être très intéressant de
+                lire ce ISTdex pour se renseigner, ne serait-ce que pour réussir notre jeu !</p>
         </div>
     </a>
 
