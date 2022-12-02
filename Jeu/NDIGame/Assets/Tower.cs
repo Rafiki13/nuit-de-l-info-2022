@@ -53,7 +53,12 @@ namespace NDIGame
             for(int i = 0; i < 50; i++)
             {
                 int j = (i + 1) % 50;
-                
+
+                //Vector3 pointA = transform.position + new 
+                //Vector3 pointB = 
+
+                //Vector3 pointA = transform.position + Vector3.left * 1.0f;
+
             }
 
         }
