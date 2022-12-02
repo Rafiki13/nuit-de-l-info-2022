@@ -214,6 +214,9 @@ main {
   .arttexte {
     width: calc(90vw - 40px);
   }
+  .img > p {
+    width: 100%;
+  }
 }
 #titleBestiaire {
   margin: 20px 0;
