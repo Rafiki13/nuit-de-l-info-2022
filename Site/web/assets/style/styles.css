@@ -8,7 +8,7 @@ body {
   background-color: #171717;
 }
 
-h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite {
+h1, h2, h3, h4, h5, h6, p, label, input, blockquote, cite, li {
   color: white;
 }
 
